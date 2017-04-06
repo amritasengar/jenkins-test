@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "phpapp",
+      "image": "REPO_NAME:GIT_COMMIT_BUILD_NUMBER",
+      "memory": 250,
+         "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80,
+                    "protocol": "tcp"
+                }
+            ]
+    }
+  ]
+}
